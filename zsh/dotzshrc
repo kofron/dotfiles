@@ -1,4 +1,4 @@
-export EDITOR='emacsclient -cnw'
+export EDITOR='emacs -nw'
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/kofron/google-cloud-sdk/path.zsh.inc'
