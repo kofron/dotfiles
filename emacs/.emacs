@@ -43,7 +43,10 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("1e67765ecb4e53df20a96fb708a8601f6d7c8f02edb09d16c838e465ebe7f51b" "0ee3fc6d2e0fc8715ff59aed2432510d98f7e76fe81d183a0eb96789f4d897ca" default))))
+    ("1e67765ecb4e53df20a96fb708a8601f6d7c8f02edb09d16c838e465ebe7f51b" "0ee3fc6d2e0fc8715ff59aed2432510d98f7e76fe81d183a0eb96789f4d897ca" default)))
+ '(package-selected-packages
+   (quote
+    (magit yaml-mode rustfmt racer protobuf-mode paganini-theme material-theme markdown-mode flycheck-rust ess elixir-mode creamsody-theme company-racer company-go))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -51,4 +54,4 @@
  ;; If there is more than one, they won't work right.
  )
 (setq custom-safe-themes t)
-(load-theme 'paganini t)
+(load-theme 'material t)
