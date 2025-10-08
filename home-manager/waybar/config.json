@@ -1,0 +1,142 @@
+[
+  {
+    "autohide": true,
+    "autohide-blocked": false,
+    "clock": {
+      "calendar": {
+        "mode": "month"
+      },
+      "format": "{:%I:%M  %d, %m}",
+      "tooltip-format": "{calendar}"
+    },
+    "cpu": {
+      "format": "{usage}% ",
+      "tooltip": true,
+      "tooltip-format": "CPU usage: {usage}%\\nCores: {cores}"
+    },
+    "custom/archicon": {
+      "format": "",
+      "on-click": "rofi -show drun",
+      "tooltip": false
+    },
+    "disk": {
+      "format": "{percentage_free}% ",
+      "tooltip": true,
+      "tooltip-format": "Free space: {free} / {total} ({percentage_free}%)"
+    },
+    "exclusive": true,
+    "gtk-layer-shell": true,
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "",
+        "deactivated": ""
+      }
+    },
+    "keyboard-state": {
+      "format": "{layout} ",
+      "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+    },
+    "layer": "top",
+    "memory": {
+      "format": "{}% 󰍛",
+      "tooltip": true,
+      "tooltip-format": "RAM in use: {used} / {total} ({percentage}%)"
+    },
+    "modules-center": [
+      "sway/workspaces"
+    ],
+    "modules-left": [
+      "custom/archicon",
+      "clock",
+      "cpu",
+      "memory",
+      "disk",
+      "temperature"
+    ],
+    "modules-right": [
+      "wlr/taskbar",
+      "idle_inhibitor",
+      "battery",
+      "pulseaudio_slider",
+      "pulseaudio",
+      "network",
+      "keyboard-state"
+    ],
+    "network": {
+      "format": "{ifname}",
+      "format-disconnected": "",
+      "format-ethernet": "{ifname} 󰈀",
+      "max-length": 50,
+      "tooltip-format": " {ifname} via {gwaddr}",
+      "tooltip-format-disconnected": "Disconnected",
+      "tooltip-format-ethernet": " {ifname} {ipaddr}/{cidr}"
+    },
+    "passthrough": false,
+    "position": "top",
+    "battery": {
+      "interval": 30,
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon} {capacity}%",
+      "format-charging": " {capacity}%",
+      "format-plugged": " {capacity}%",
+      "format-full": " {capacity}%",
+      "tooltip": true,
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "pulseaudio": {
+      "format": "{volume}% {icon}",
+      "format-icons": {
+        "default": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "format-muted": " {format_source}"
+    },
+    "pulseaudio_slider": {
+      "format": "{volume}%",
+      "on-click": "pavucontrol",
+      "tooltip": false
+    },
+    "sway/workspaces": {
+      "all-outputs": true,
+      "disable-scroll": true,
+      "format": "{icon}",
+      "format-icons": {
+        "default": "",
+        "focused": "",
+        "urgent": ""
+      }
+    },
+    "temperature": {
+      "format": "{temperatureC}°C {icon}",
+      "format-icons": [
+        ""
+      ],
+      "tooltip": true,
+      "tooltip-format": "Current temperature: {temperatureC}°C\\nCritical > 80°C"
+    },
+    "wlr/taskbar": {
+      "active-first": true,
+      "all-outputs": true,
+      "format": "{icon}",
+      "ignore-list": [
+        "rofi"
+      ],
+      "on-click": "activate",
+      "on-click-middle": "close",
+      "tooltip-format": "{name}"
+    }
+  }
+]
