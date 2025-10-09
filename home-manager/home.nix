@@ -152,6 +152,11 @@
         }
       }
     '';
+    ".config/doom" = {
+      source = ../config/doom;
+      recursive = true;
+    };
+    ".config/fish/functions/fish_prompt.fish".source = ../config/fish/functions/fish_prompt.fish;
   };
 
   # Home Manager can also manage your environment variables through

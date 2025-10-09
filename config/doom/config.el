@@ -74,9 +74,4 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-(use-package git-gutter
-  :hook (prog-mode . git-gutter-mode)
-  :config
-  (setq git-gutter:update-interval 0.02))
-
 (global-display-line-numbers-mode)
