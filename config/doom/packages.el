@@ -55,3 +55,4 @@
 
 (package! git-gutter)
 (package! git-gutter-fringe)
+(package! org-modern)
