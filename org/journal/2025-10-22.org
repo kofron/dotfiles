@@ -2,7 +2,7 @@
 * Morning checklist
 ** DONE Tinnitus check
 CLOSED: [2025-10-22 Wed 09:10]
-It's kinda bad today.  Maybe a 4/10.  I woke up in the middle of the night and it was bad then too.  I can hear it over my music which is nuts.  I did have a little wine yesterday... maybe that's it?
+jIt's kinda bad today.  Maybe a 4/10.  I woke up in the middle of the night and it was bad then too.  I can hear it over my music which is nuts.  I did have a little wine yesterday... maybe that's it?
 ** DONE Copy calendar for today here
 CLOSED: [2025-10-22 Wed 09:13]
 ** DONE Read calendar for tomorrow, next week - any action items move here as TODO
@@ -10,7 +10,7 @@ CLOSED: [2025-10-22 Wed 10:18]
 
 
 * Journal
-
+** TODO goblin proof the catio with the tape <2025-10-23 Thu 07:30>
 
 * Plan for today
 ** Morning  <2025-10-22 Wed 09:30>--<2025-10-22 Wed 10:00>
@@ -25,12 +25,13 @@ CLOSED: [2025-10-22 Wed 17:23]
 CLOSED: [2025-10-22 Wed 17:23]
 *** DONE set time with caleb
 CLOSED: [2025-10-22 Wed 10:22]
-*** DONE email eric about bangkok
+*** DONE email eric about bgkok
 CLOSED: [2025-10-22 Wed 10:23]
 ** Instrument interview with prospective CTO <2025-10-22 Wed 10:00>--<2025-10-22 Wed 11:00>
 ** Travel Errands <2025-10-22 Wed 11:00>--<2025-10-22 Wed 12:40>
 ** Boat back <2025-10-22 Wed 13:10>
-** FOCUS Refactr <2025-10-22 Wed 14:00>--<2025-10-22 Wed 17:00>
+** DONE Refactr <2025-10-22 Wed 14:00>--<2025-10-22 Wed 17:00>
+CLOSED: [2025-10-22 Wed 22:47]
 
 * Notes from today
 ** TODO org-agenda... how can I better use it for my calendar/checkins/etc?
@@ -47,6 +48,3 @@ currently at echo insights
 ** Tonight
 *** TODO Clean rifle
 *** TODO need to make sure we are marking our stud lines before we completely finish the walls!  That will make our lives way easier when it's time to lag.
-*** TODO Slang some insulation & drywall
-*** TODO Set time w Mike for this weekend
-*** TODO Make sure we have time w Rich scheduled
