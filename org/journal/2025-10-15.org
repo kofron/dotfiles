@@ -1,0 +1,52 @@
+#+title: Wednesday, 15 October 2025
+
+* Morning checklist
+** DONE Sleep check
+CLOSED: [2025-10-15 Wed 09:11]
+Slept well.  7.5 hours, 94 according to sleep tracker.  Over an hour in deep sleep.  Got to bed around 1030 and slept until 625.  Woke up from kitchen lights (I think)
+** DONE Tinnitus check
+CLOSED: [2025-10-15 Wed 09:11]
+About a 4/10.  High pitched, not much lower tone audibly present, but the beat is there.
+** DONE Copy calendar for today here
+CLOSED: [2025-10-15 Wed 09:14]
+
+** DONE Read calendar for tomorrow, next week - any action items move here as TODO
+CLOSED: [2025-10-15 Wed 10:55]
+
+
+
+* Journal
+
+Yesterday went ok, made a lot of progress on work stuff.  I felt pretty focused and able to get shit done.  I think turning the dial down on the prednisone has really helped get my sleep into better shape and also my focus.  Definitely feels like an improvement.  But I'm feeling pretty checked out at PSL otherwise.  I just want to get all my stuff done and head out.  I'm hoping I can have the first round of conversation with Greg on thursday and then TA friday?  It's challenging to juggle those two but I think it needs to be Greg first.
+
+Katie is completely convinced that we're going to break up, and it's coming out as a lot of anger and frustration.  She's just kind of pissed and pent up and everything is getting funneled through that presentiment she's having.  I don't really know what to do about that - I'm trying to be there for her, but it's pretty tough to be both the "at fault" party and also the comforter.
+
+
+* Plan for today
+** Morning
+*** DONE Refactr prompts - get these tuned
+CLOSED: [2025-10-15 Wed 16:28]
+*** DONE Get cursor deets from Kevin.  Figure out if we need to cancel.
+CLOSED: [2025-10-15 Wed 10:39]
+*** DONE Get check-in with Caleb scheduled - seeing him friday but should see if we can tb earlier to talk about the tui work
+CLOSED: [2025-10-15 Wed 10:39]
+*** DONE quote & pic to kyle
+CLOSED: [2025-10-15 Wed 16:28]
+** MTG 1-130 Adam
+** MTG 2-3 Sheikh
+** MTG 1-130 refactr game plan w/Greg & Alex
+** MTG 3-4 BIPD
+** MTG 4-430 caleb
+
+* Notes from today
+refactr: Openai codex auth - need to verify that we can pass arbitrary api keys or profiles.  In theory we're able to but for now the embedded codex agent gets invoked with the default openai creds.
+
+* 12-4
+** DONE journal template
+CLOSED: [2025-10-15 Wed 09:21]
+* Tonight
+** DONE Book actual tickets
+CLOSED: [2025-10-15 Wed 08:29]
+* 12-4
+** DONE Refactr! - continue the work.  Would be really ideal if the manager was wired up and we could do our first smoke testing runs
+CLOSED: [2025-10-15 Wed 12:04]

@@ -1,0 +1,43 @@
+#+title: Tuesday, 21 October 2025
+* Morning checklist
+** DONE Tinnitus check
+CLOSED: [2025-10-21 Tue 08:46]
+3.5 probably.  Higher pitched.  I'm doing the neuromodulator right now as I write this to see if it will calm it down.
+** DONE Copy calendar for today here
+CLOSED: [2025-10-21 Tue 13:22]
+** DONE Read calendar for tomorrow, next week - any action items move here as TODO
+CLOSED: [2025-10-21 Tue 13:22]
+
+
+* Journal
+Yesterday was good!  Greg and I had a chance to at least shake hands w.r.t. me leaving - haven't talked to him at length yet but will try to do that this week.  TA and I did come to a good plan.
+
+The git/agent interaction in refactr is tricky.  I need a more sophisticated state machine infrastructure to really fix it, but that's looking good - I found a couple of good blog posts.  There's the classic bottle post, and then I found another one that is more comprehensive but also kinda half-assed... their types aren't communicated well and I think they just kinda phoned it in while they were writing it.  The good news is that I can reconstruct it without too much trouble.
+
+Continued progress on the Katie front.  I think the hmt strategy is really paying off, plus the anxiety book.  It's good stuff.  The idea of sitting with anxiety and letting yourself get close to it is kind of wild but also powerful.
+
+I need to adjust some timing parameters on my keyboard - I'm hitting specials too often and in emacs it's really an issue for e.g. C-x z.  I might rebind the left second thumb button.
+
+
+* Plan for today
+** 9ish - Call Stefan
+** 10-11 Peggie
+** 11-12 David (need to text him about being a few late... and is it 11 or 1??)
+** 12-1 FFL?  Maybe?
+** FOCUS 1-4 Refactr - state machine work
+** 4-5 John
+** 430 - OKC
+** 7 - GSW
+
+* Plan for today
+** MTG 9-10 PSL core
+*** DONE Call BI junk pickup ppl
+CLOSED: [2025-10-21 Tue 08:44]
+*** DONE Check on OpenAI event on thursday.
+CLOSED: [2025-10-21 Tue 08:45]
+** 10-230
+*** DONE Get availability from Justin/Mike/Sheikh/Stefan/Dave.
+CLOSED: [2025-10-21 Tue 14:10]
+** Tonight
+*** DONE Reach out to charlene
+CLOSED: [2025-10-21 Tue 14:13]

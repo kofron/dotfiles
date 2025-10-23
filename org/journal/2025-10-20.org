@@ -1,0 +1,47 @@
+#+title: Monday, 20 October 2025
+* Morning checklist
+** DONE Tinnitus check
+CLOSED: [2025-10-20 Mon 08:02]
+Extremely quiet today.  1/10 probably.  Interestingly, yesterday was the first time I tried the neuromodulator approach.  It gave almost instant relief, which was crazy.  Now I'm trying it again while I do this to see if I can dial in the right amplitude & settings.  It's pretty easy to use.  I'm finding a very low amplitude steve seq mixed with maybe 20% amplitude sinescape stereo is about right to be JUST audible.
+** DONE Copy calendar for today here
+CLOSED: [2025-10-20 Mon 08:04]
+* Journal
+A wild thing happened yesterday.  I was able to defuse a bit fight by just getting in close to Katie, talking in low tones, using a lot of physical touch, and not letting myself get activated.  I thought
+for sure that it was going to completely explode... but it didn't.  I feel like I cracked some kind of code.
+
+The shop is coming along really well!  We've almost got the carport wall entirely done.  that's going to be -huge- and will letus move all kinds of scrap, shelves, etc.  MASSIVE improvement in overall
+layout and space.  Then it's the back wall.  So that means we need to get the upright racks together, the prebuilt shelves, and some kind of scrap bin.  One of those laundry cart style things would be
+great.  Maybe we build something?  But once that's done, it's going to be kind of a cascading thing.  We're going to all of a sudden have a ton of space on that side of the shop, which will let us improve
+the space elsewhere - the far wall will all of a sudden be almost empty.  Then the back wall gets done, which means there's a ton more space there.  Etc etc.
+
+We still need the shelf planning, but I think we can just do french cleats and call it a day.  I know how to make them, and the domino is going to make it dead simple to put them together.
+
+I'm becoming increasingly concerned about these blood tests.  I don't like it.
+
+* Notes from today
+
+* Plan for today
+** Boat
+*** DONE edit down refactr demo vid
+CLOSED: [2025-10-20 Mon 09:18]
+** MTG 9-10 PSL core
+*** DONE Update calendar with travel.
+CLOSED: [2025-10-20 Mon 09:20]
+*** DONE Update calendar with Peggie on Tuesday
+CLOSED: [2025-10-20 Mon 09:34]
+*** DONE Merge to main
+CLOSED: [2025-10-20 Mon 09:20]
+*** DONE Preorder laptop
+CLOSED: [2025-10-20 Mon 09:18]
+** 10-230
+*** FOCUS Refactr
+**** Synth loop
+**** Tune prompts
+**** Git blacklisting
+*** DONE Call UW eye center.  Need somebody to actually talk to me.
+CLOSED: [2025-10-20 Mon 10:45]
+** MTG 230-3 Caleb
+** MTG 345-4 Refactr Checkout
+** Tonight
+***  KILL middle leg design/cut - ready to glue
+CLOSED: [2025-10-20 Mon 07:59]

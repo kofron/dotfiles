@@ -1,0 +1,40 @@
+#+title: Tuesday, 14 October 2025
+
+Tinnitus: Louder today.  4-5/10.  I woke up in the middle of the night after norman chased after gob and it was -very- loud, like 6-7.  Can't be a coincidence that it's getting louder as the steroid taper continues.  It's almost all high pitch today.
+
+Yesterday made a lot of good progress on my work.  Refactr is actually cruising right now - everything is almost entirely done end-to-end.  We still have some plumbing to do, but it's getting tighter and tighter.  Right now, we're getting the ticket generation step of the pipeline wired in, and then it's the 'manager' that will execute the entire ticket graph with our internal codex.  I think it'll be EOD-ish today that I'm getting the manager wired in, and that means tomorrow in principle we can be testing the e2e flow!  Pretty exciting.
+
+Katie and I got into another fight last night.  It was triggered by me looking at my phone while she was sitting with me - she complains that I'm distracted.  Which I am, that's not unfair.  Work has been consuming me recently bc I'm thinking a lot about how I'm about to leave and I want PSL to be set up well on this project while I'm in the process of exiting.  She's right though, and I'm doing the thing again where I'm just sort of stewing on feeling behind/under the gun without talking about it and trying to compensate silently. Which of course she doesn't know anything about.  What's difficult is that it feels like every day is just sort of high stakes in a way that makes it hard to engage.  I don't want to bring stuff up when it's so totally clear that we're like in the middle of a battle.
+
+I have to get better at my calendar.  Angie introduced me to her friend Sheikh and I completely spaced on meeting him today, and I also missed meeting him on Friday when I had my audiology appt.  I feel like an idiot - this just keeps happening where I'm double booked, or missing a meeting, or whatever.  It's putting other people out and it really sucks.  I don't know why this is such a challenge for me - not to be self judgemental or anything but like actually, fr, why is this so hard?  I really just need to get in the habit of creating meetings, reading my calendar religiously, etc etc.
+
+Maybe between org mode and the calendar I can get good.  Here's an idea:
+
+- Customize the org journal template so that it has kind of a checklist - tinnitus, calendar checkin, review previous day, carryover, etc.
+- Add more of the "todo" states like focus/appt/commute so that I can tag blocks as being todos instead of other agenda reminders
+
+Also, is there some way to sync org to other places?  Obviously we can add it to git but that's not probably not the best sync mechanism... or is it?  The other thing to solve is being able to add other metadata like images and recordings and whatnot.  That feels like it could be a challenge but maybe not?
+
+* notes
+** watch
+can i trade in my apple watch for fenix 8?
+
+** org
+I want to set up capture for quick notes, agenda integration, and also some kind of timer/reminder system so that it tells me what's next maybe in the minibuffer?  Also add more org states.
+Oh shit - maybe org sql will let me use sqlite and then I could just use litestream... that would be amazing.
+
+
+* 1030-11
+** DONE Refactr - get the manager tasks cranking, continue the ticket generator tasks.
+CLOSED: [2025-10-14 Tue 12:23]
+
+
+* 11-12
+** APPT David
+
+* 12-4
+** DONE Try to move TA to today or thursday (thursday wuld be ideal)
+CLOSED: [2025-10-14 Tue 12:22]
+* 445
+** COMMUTE boat home
+

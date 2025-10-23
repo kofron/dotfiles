@@ -1,0 +1,42 @@
+#+title: Thursday, 16 October 2025
+* Morning checklist
+** DONE Tinnitus check
+CLOSED: [2025-10-16 Thu 08:49]
+Better than yesterday - more like a 2.5?  Definitely high pitched.  No warble from the low tones.
+** DONE Copy calendar for today here
+CLOSED: [2025-10-16 Thu 08:51]
+
+* Journal
+
+Yesterday was pretty productive.  Got a lot done on refactr, and got caleb pretty up to speed on what needs to happen with the tui.  He's not able to get TUI done this week, would be next week, but he's in good shape.  Once I get the manager loop finished up we're going to be rockin.
+
+I really need to rip off the PSL bandaid.  Even though I don't want to do this over Zoom it needs to happen today.  I'm going to talk to TA & Greg today in our respective 1:1s and use the advice framing that I chatted with Julie about.
+Something to figure out is last day.  I think I want to try to make it in November but I will be on vacation for that last 2 weeks, so it would be a favor to ask to set my last day while I'm on PTO.  I also need to figure out what that means for my vest and/or refactr.  Oof
+
+Great chat with Sheikh yesterday.  Adam was good too - I don't know how deeply technical he is (not very, I don't think), but he seems sufficiently dangerous that I think he could be a really good EM for FDEs, certainly regionally.  Would be great to get more time with him to figure that out a bit more.
+
+Katie and I had a good conversation last night.  I think my evolution on this is going to really help her feel heard and understood.  I also started that anxiety book last night and so far it's good!
+
+* Notes from today
+
+** Applicatives :applicative:
+More fun in a query planner: https://exploring-better-ways.bellroy.com/free-applicatives-the-handle-pattern-and-remote-systems.html
+
+* Plan for today
+** Morning
+*** DONE start new codex agent
+CLOSED: [2025-10-16 Thu 13:01]
+*** DONE look at vesting schedule
+CLOSED: [2025-10-16 Thu 11:57]
+** 1030 Coffee w/Sam
+** 1130
+*** DONE Zoom link for Greg 1:1
+CLOSED: [2025-10-16 Thu 11:57]
+*** FOCUS Refactr manager loop.  SSE pause needs to get worked out
+** 245 Greg
+** 515 Call w/Peggie
+** DONE Let Katie know there's an openai event next week.  No decision on attendance but want to float it
+CLOSED: [2025-10-16 Thu 07:13]
+* Tonight
+** DONE Second table half glue-up
+CLOSED: [2025-10-16 Thu 07:12]
