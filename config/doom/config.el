@@ -41,7 +41,7 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 ;;; --- org basics
-(setq org-directory "~/org"
+(setq org-directory "~/dotfiles/org"
       org-agenda-files (list (expand-file-name "journal/" org-directory))
       org-log-done 'time
       org-todo-keywords '((sequence "TODO(t)" "FOCUS(f)" "MTG(m)" "WAIT(w)" "|" "DONE(d)" "KILL(x)"))

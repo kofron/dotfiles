@@ -9,9 +9,6 @@ CLOSED: [2025-10-22 Wed 09:13]
 CLOSED: [2025-10-22 Wed 10:18]
 
 
-* Journal
-** TODO goblin proof the catio with the tape <2025-10-23 Thu 07:30>
-
 * Plan for today
 ** Morning  <2025-10-22 Wed 09:30>--<2025-10-22 Wed 10:00>
 *** DONE Keep agent going on refactr state machine
@@ -20,7 +17,6 @@ CLOSED: [2025-10-22 Wed 10:22]
 CLOSED: [2025-10-22 Wed 17:23]
 *** DONE read about org-agenda
 CLOSED: [2025-10-22 Wed 17:23]
-*** TODO Call VM hematology <2025-10-22 Wed 11:15>
 *** DONE Respond to Patrick <2025-10-22 Wed 11:00>
 CLOSED: [2025-10-22 Wed 17:23]
 *** DONE set time with caleb
@@ -34,17 +30,8 @@ CLOSED: [2025-10-22 Wed 10:23]
 CLOSED: [2025-10-22 Wed 22:47]
 
 * Notes from today
-** TODO org-agenda... how can I better use it for my calendar/checkins/etc?
-** TODO A personal user manual!
-https://docs.google.com/presentation/d/1RRctI9_DOcTVHkY2zOnlu44KZTy3sJNNae5bZJydUk0/edit?slide=id.p2#slide=id.p2
-
-
 ** Interview w/Jeremy (Instrument)
 currently at echo insights
 
 
 
-* Plan for today
-** Tonight
-*** TODO Clean rifle
-*** TODO need to make sure we are marking our stud lines before we completely finish the walls!  That will make our lives way easier when it's time to lag.

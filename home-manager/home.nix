@@ -40,7 +40,7 @@
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
 
     # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
+    # # configuration. For example, this adds a command 'my-hello' to you
     # # environment:
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
@@ -60,6 +60,8 @@
     pkgs.jq
     pkgs.brave
     pkgs.signal-desktop
+    pkgs.ripgrep
+    pkgs.nixfmt
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
