@@ -22,7 +22,7 @@
 ** TODO org-agenda... how can I better use it for my calendar/checkins/etc?
 ** TODO A personal user manual!
 https://docs.google.com/presentation/d/1RRctI9_DOcTVHkY2zOnlu44KZTy3sJNNae5bZJydUk0/edit?slide=id.p2#slide=id.p2
-
+** TODO AP2O - Correcting LLM Generated Code errors (Zhang et al)
 
 * Plan for today
 ** Tonight
@@ -30,3 +30,4 @@ https://docs.google.com/presentation/d/1RRctI9_DOcTVHkY2zOnlu44KZTy3sJNNae5bZJyd
 *** TODO need to make sure we are marking our stud lines before we completely finish the walls!  That will make our lives way easier when it's time to lag.
 *** TODO Invest Katie cash
 *** TODO Audio setup on laptop
+*** TODO Order icebreaker shirts... or just get from REI?
