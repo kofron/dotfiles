@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./sway.nix
     ./git.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
@@ -28,40 +27,49 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
-
-    # # It is sometimes useful to fine-tune packages, for example, by applying
-    # # overrides. You can do that directly here, just don't forget the
-    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
-    # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
-
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to you
-    # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
-    pkgs.waybar
-    pkgs.grim
-    pkgs.slurp
-    pkgs.wl-clipboard
-    pkgs.brightnessctl
-    pkgs.nerd-fonts.iosevka-term
-    pkgs.iosevka
-    pkgs.keymapp
-    pkgs.bun
-    pkgs.nodejs_22
-    pkgs.zellij
-    pkgs.mkcert
-    pkgs.jq
-    pkgs.brave
-    pkgs.signal-desktop
-    pkgs.ripgrep
-    pkgs.nixfmt
+  home.packages = with pkgs; [
+    brightnessctl
+    brave
+    blueman
+    bun
+    cmus
+    flameshot
+    font-awesome
+    ghostty
+    grim
+    jq
+    keymapp
+    libnotify
+    librewolf
+    lm_sensors
+    mako
+    mate.mate-polkit
+    mkcert
+    networkmanagerapplet
+    nixfmt
+    nodejs_22
+    pavucontrol
+    pcmanfm
+    playerctl
+    ripgrep
+    roboto
+    signal-desktop
+    slurp
+    swaybg
+    sway
+    swayidle
+    swaylock-effects
+    waybar
+    wireplumber
+    wl-clipboard
+    wlsunset
+    upower
+    zathura
+    zellij
+    feh
+    nerd-fonts.iosevka-term
+    nerd-fonts.iosevka
+    iosevka
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -164,6 +172,25 @@
     ".config/fish/functions/hm-s.fish".source = ../config/fish/functions/hm-s.fish;
     ".config/fish/functions/op-env.fish".source = ../config/fish/functions/op-env.fish;
     ".config/op/env.fish.tmpl".source = ../config/op/env.fish.tmpl;
+    ".config/custom_scripts" = {
+      source = ../custom_scripts;
+      recursive = true;
+    };
+    ".local/share/config_dotfiles/config/waybar_configs" = {
+      source = ../config/waybar;
+      recursive = true;
+    };
+  };
+
+  xdg.configFile = {
+    "sway" = {
+      source = ../config/sway;
+      recursive = true;
+    };
+    "waybar" = {
+      source = ../config/waybar/waybar_block_1;
+      recursive = true;
+    };
   };
 
   # Home Manager can also manage your environment variables through
