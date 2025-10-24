@@ -176,6 +176,10 @@
       source = ../custom_scripts;
       recursive = true;
     };
+    ".config/rofi" = {
+      source = ../config/rofi;
+      recursive = true;
+    };
     ".local/share/config_dotfiles/config/waybar_configs" = {
       source = ../config/waybar;
       recursive = true;
