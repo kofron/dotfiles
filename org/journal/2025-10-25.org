@@ -1,0 +1,39 @@
+#+title: Saturday, 25 October 2025
+* Morning checklist
+** DONE Tinnitus check
+CLOSED: [2025-10-25 Sat 10:15]
+Probably like a 2/10.  Higher pitched.  It's very clear that my hearing is worse now than it was a few weeks ago with the steroids in full effect (I'm down to 5mg daily, will be 5 every other day next week).
+** DONE Copy calendar for today here
+CLOSED: [2025-10-25 Sat 10:15]
+** DONE Read calendar for tomorrow, next week - any action items move here as TODO
+CLOSED: [2025-10-25 Sat 10:20]
+
+
+* Notes from today
+* Journal
+
+* Plan for today
+** DONE Meet with Mike at Noon <2025-10-25 Sat 12:00>
+CLOSED: [2025-10-25 Sat 13:56]
+** DONE emacs vterm
+CLOSED: [2025-10-25 Sat 14:11]
+** DONE goblin proof the catio with the tape <2025-10-25 Sat 13:30>
+CLOSED: [2025-10-26 Sun 12:10]
+** DONE put katie $ in calendar
+CLOSED: [2025-10-25 Sat 19:45]
+** DONE sell stock to send2
+CLOSED: [2025-10-25 Sat 20:08]
+Total debt is 30k.  I've payed 4 which leaves 26.  But 2500 more piles up each month.  For Nov,Dec,Jan,Feb,Marc, that's an additional 12.5k.  So if I just increase the payment to 2500, then pay 19 as a gift, that's down to 11.  That's the safest thing.  Then, in April after the tax year rolls over, I can send another 11 and there are no consequences.  That also lets us deduct the remainder.  So for the 19, I'll wind up owing 15% which is ~3k on the sale.
+** DONE lilies
+CLOSED: [2025-10-26 Sun 12:06]
+** Tonight
+*** DONE Invest Katie cash
+CLOSED: [2025-10-26 Sun 22:32]
+*** DONE Audio setup on laptop
+CLOSED: [2025-10-25 Sat 19:44]
+*** DONE Order icebreaker shirts... or just get from REI?
+CLOSED: [2025-10-25 Sat 10:19]
+
+* Before we leave
+** DONE Plants ready for winter
+CLOSED: [2025-10-26 Sun 12:01]

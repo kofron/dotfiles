@@ -232,6 +232,11 @@
     };
   };
 
+  programs.emacs = {
+    enable = true;
+    extraPackages = epkgs: [ epkgs.vterm ];
+  };
+
   programs.ghostty.enable = true;
   programs.ghostty.settings = {
     "font-family" = "IosevkaTerm Nerd Font";

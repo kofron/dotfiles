@@ -1,0 +1,67 @@
+#+title: Monday, 27 October 2025
+* Morning checklist
+** TODO Tinnitus check
+It's a 4 or so today - it felt really bad when I woke up in the middle of the night but maybe is a bit better now?  Hearing is definitely worse than it has been.
+** TODO Copy calendar for today here
+
+** TODO Read calendar for tomorrow, next week - any action items move here as TODO
+
+
+* Journal
+Woof, I feel horrible today.  Really tired and out of it, and I have a nasty headache to boot.  I'm going to guess it's the hydrea - I've been taking it for 3 days or so now and maybe it's just kicking in.  Not super nauseated or anything - primarily just feeling really out of it and a little sick.  Also possible that this is the tail end of the prednisone taper, hard to say.  I've also changed my diet to be more focused.  A lot of things are changing at once!
+
+I'm increasingly convinced that ET is what's happening.  It certainly could also be reactive thrombocytosis but that would leave the 2022 platelet count unexplained.  Its weird to adopt the blood cancer diagnosis, but it fits, and is at least something that we can control to some extent.  I just hope that the medication and everything that comes along with it doesn't interfere with my work too much.  Also, see the next paragraph on nosebleeds.
+
+Tomorrow is my last day at PSL.  Originally I was going to be headed to the airport tomorrow evening... but not anymore.  Dr. Stevens is sounding the alarm, and I think she's right to.  My platelet count is high enough that I'm having nosebleeds and such.  Which actually reminds me... that was a big complaint of mine before the sinus surgery - all of a sudden I was getting bad nosebleeds.  I'm going to push our flights out to friday and hope for the best in terms of platelet control before then, but it feels like a dice roll.
+
+Katie and I are in a bad place.  I'm starting to think that there's just so much resentment built up on her side that it may be impossible (at least extremely difficult) to recover.  We can hardly talk about anything in the house without her getting extremely upset, and then that leads to nothing good  I've not been having good luck being able to self-modulate in a lot of those conversations, which I think is also driven by my own reaction to this latest health stuff.  It's just kind of a dumpster fire and I'm not really sure how to put it out.  We're just so pissed off at each other.
+
+
+* Plan for today
+** TODO Rebook flights <2025-10-27 Mon>
+*** DONE rebook sea -> bkk
+CLOSED: [2025-10-27 Mon 10:45]
+*** STRT rebook dmk -> cnx
+** PSL Core <2025-10-27 Mon 09:00>
+** Molly Ramp <2025-10-27 Mon 10:00>
+** Record demo voiceover, send to Ernie <2025-10-27 Mon 10:30>
+** FFL <2025-10-27 Mon 11:30>
+** Refactr Deep Dive <2025-10-27 Mon 14:00>
+** Shilpa Coffee <2025-10-27 Mon 15:00>
+** Ferry home <2025-10-27 Mon 16:45>
+
+* Notes from today
+* Plan for today
+** TODO github org
+** TODO 1password
+** TODO monorepo
+** TODO provisioning accounts - can we pulumi
+** STRT Figure out meeting up with stefan on tuesday for bank stuff
+** TODO Talk to katie about HH on tuesday
+** TODO cactus
+*** DONE boxes gluing
+CLOSED: [2025-10-26 Sun 22:32]
+*** TODO hooks on, sites identified
+*** TODO cactus moved
+** TODO finish the tomato thing
+** STRT move flights
+
+** Tonight
+*** TODO Clean rifle
+*** TODO need to make sure we are marking our stud lines before we completely finish the walls!  That will make our lives way easier when it's time to lag.
+* Before we leave
+** DONE clean the fridge completely
+CLOSED: [2025-10-27 Mon 08:14]
+** TODO aarons room
+** TODO get shirts
+** TODO packd
+** TODO water bottle
+** TODO acp.el
+** TODO p2p replication
+* Random stuff
+** TODO Cancel eero
+** TODO Cancel wakatime
+** TODO cancel ynab
+** TODO rocket money or something?
+** TODO Cancel bitwarden
+** TODO Aaron chumstock 2026, feb 26 - march 2
