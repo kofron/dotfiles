@@ -1,12 +1,4 @@
 #+title: Monday, 27 October 2025
-* Morning checklist
-** TODO Tinnitus check
-It's a 4 or so today - it felt really bad when I woke up in the middle of the night but maybe is a bit better now?  Hearing is definitely worse than it has been.
-** TODO Copy calendar for today here
-
-** TODO Read calendar for tomorrow, next week - any action items move here as TODO
-
-
 * Journal
 Woof, I feel horrible today.  Really tired and out of it, and I have a nasty headache to boot.  I'm going to guess it's the hydrea - I've been taking it for 3 days or so now and maybe it's just kicking in.  Not super nauseated or anything - primarily just feeling really out of it and a little sick.  Also possible that this is the tail end of the prednisone taper, hard to say.  I've also changed my diet to be more focused.  A lot of things are changing at once!
 
@@ -18,10 +10,6 @@ Katie and I are in a bad place.  I'm starting to think that there's just so much
 
 
 * Plan for today
-** TODO Rebook flights <2025-10-27 Mon>
-*** DONE rebook sea -> bkk
-CLOSED: [2025-10-27 Mon 10:45]
-*** STRT rebook dmk -> cnx
 ** PSL Core <2025-10-27 Mon 09:00>
 ** Molly Ramp <2025-10-27 Mon 10:00>
 ** Record demo voiceover, send to Ernie <2025-10-27 Mon 10:30>
@@ -32,36 +20,6 @@ CLOSED: [2025-10-27 Mon 10:45]
 
 * Notes from today
 * Plan for today
-** TODO github org
-** TODO 1password
-** TODO monorepo
-** TODO provisioning accounts - can we pulumi
-** STRT Figure out meeting up with stefan on tuesday for bank stuff
-** TODO Talk to katie about HH on tuesday
-** TODO cactus
-*** DONE boxes gluing
-CLOSED: [2025-10-26 Sun 22:32]
-*** TODO hooks on, sites identified
-*** TODO cactus moved
-** TODO finish the tomato thing
-** STRT move flights
-
-** Tonight
-*** TODO Clean rifle
-*** TODO need to make sure we are marking our stud lines before we completely finish the walls!  That will make our lives way easier when it's time to lag.
-* Before we leave
 ** DONE clean the fridge completely
 CLOSED: [2025-10-27 Mon 08:14]
-** TODO aarons room
-** TODO get shirts
-** TODO packd
-** TODO water bottle
-** TODO acp.el
-** TODO p2p replication
-* Random stuff
-** TODO Cancel eero
-** TODO Cancel wakatime
-** TODO cancel ynab
-** TODO rocket money or something?
-** TODO Cancel bitwarden
-** TODO Aaron chumstock 2026, feb 26 - march 2
+

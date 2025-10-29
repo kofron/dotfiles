@@ -1,0 +1,37 @@
+#+title: Tuesday, 28 October 2025
+* Morning checklist
+** DONE Tinnitus check
+CLOSED: [2025-10-28 Tue 09:47]
+I'd put it at a 2 today.  It's interesting - it's been loud at night and in the morning, but it quiets down mid-morning... after exercise?  Just time?
+** DONE Copy calendar for today here
+CLOSED: [2025-10-28 Tue 09:55]
+* Journal
+Last day at PSL today!  Katie got enraged with me this morning bc she feels like I'm not telling her plans.  But I'm trying to.  I don't really know how to deal with that.
+We had a pretty good night last night just hanging out on the couch watching tv and doing the crossword.  But we also had a huge fight earlier in the week, and so it's a little challenging for me to put all of this together into a coherent story.  I just think we're really struggling to get (and stay) connected.
+
+* Notes from today
+* Plan for today
+** DONE Talk to katie about HH on tuesday
+CLOSED: [2025-10-28 Tue 07:12]
+** DONE move flights
+CLOSED: [2025-10-28 Tue 09:48]
+
+** Tonight
+*** DONE boxes gluing
+CLOSED: [2025-10-26 Sun 22:32]
+* Random stuff
+** Todo Cancel wakatime
+* Super
+** Chatkit & Webflow
+Goal: Marketing-accessible landing page on webflow with a chatbot for lead gen / basic interactions.
+Solution: use openai chatkit & webflow + custom code.
+
+First I need to create the github org, and seed it with the right stuff.
+
+There are three parts to this.
+
+- We need to build the custom react components that will get bundled and served from either S3 or R2
+- We need the worker/lambda that can serve the chatkit backend
+- We need the agent itself
+
+I think we should use aws AppRunner for the backend, and S3 for hosting the bundled react components.

@@ -1,0 +1,84 @@
+#+title: Wednesday, 29 October 2025
+* Morning checklist
+** TODO Tinnitus check
+** TODO Copy calendar for today here
+** TODO Read calendar for tomorrow, next week - any action items move here as TODO
+
+
+* Journal
+
+
+
+
+
+* Notes from today
+* Morning checklist
+** TODO Read calendar for tomorrow, next week - any action items move here as TODO
+
+
+* Morning checklist
+** TODO Tinnitus check
+It's a 4 or so today - it felt really bad when I woke up in the middle of the night but maybe is a bit better now?  Hearing is definitely worse than it has been.
+** TODO Copy calendar for today here
+
+** TODO Read calendar for tomorrow, next week - any action items move here as TODO
+
+
+* Plan for today
+** DONE Order DP from FW
+CLOSED: [2025-10-29 Wed 08:02]
+** TODO Side yard
+** TODO Weather: will it be nice enough for the mixer?
+** TODO reach out to PSL re: address & options
+** DONE Plan for chatkit & webflow <2025-10-28 Tue 09:55>
+CLOSED: [2025-10-29 Wed 07:51]
+** DONE Cancel bangkok hotel etc
+CLOSED: [2025-10-29 Wed 07:51]
+** DONE David <2025-10-28 Tue 11:00>
+CLOSED: [2025-10-29 Wed 07:51]
+** DONE Exit interview <2025-10-28 Tue 12:30>
+CLOSED: [2025-10-29 Wed 07:51]
+** DONE FFL <2025-10-28 Tue 13:00>
+CLOSED: [2025-10-29 Wed 07:51]
+** DONE HH <2025-10-28 Tue 16:00>
+CLOSED: [2025-10-29 Wed 07:51]
+** TODO Rebook flights <2025-10-28 Tue 10:30>
+*** DONE rebook sea -> bkk
+CLOSED: [2025-10-27 Mon 10:45]
+*** STRT rebook dmk -> cnx
+** Tonight
+*** TODO Clean rifle
+*** TODO need to make sure we are marking our stud lines before we completely finish the walls!  That will make our lives way easier when it's time to lag.
+ Before we leave
+*** TODO cactus
+*** TODO hooks on, sites identified
+*** TODO cactus moved
+*** TODO finish the tomato thing
+* Before we go
+** TODO aarons room
+** TODO get shirts
+** TODO packd
+** TODO water bottle
+** TODO acp.el
+** TODO p2p replication
+
+* Random stuff
+** TODO Cancel eero
+** TODO Anthony & Justin wednesday
+** TODO cancel ynab
+** TODO rocket money or something?
+** TODO Cancel bitwarden
+** DONE Aaron chumstock 2026, feb 26 - march 2
+CLOSED: [2025-10-29 Wed 07:52]
+** TODO iroh service discovery
+
+* Super
+** DONE Justin offer w/Stefan
+CLOSED: [2025-10-29 Wed 07:51]
+** DONE github org
+CLOSED: [2025-10-29 Wed 07:52]
+** DONE monorepo
+CLOSED: [2025-10-29 Wed 07:52]
+** TODO provisioning accounts - pulumi?
+** DONE Stefan tues/weds for bank
+CLOSED: [2025-10-29 Wed 12:36]
