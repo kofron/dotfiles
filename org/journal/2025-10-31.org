@@ -1,0 +1,10 @@
+#+title: Friday, 31 October 2025
+* Plan for today
+** DONE Clean car out
+CLOSED: [2025-10-31 Fri 13:57]
+** DONE Rebook flights <2025-10-28 Tue 10:30>
+CLOSED: [2025-10-31 Fri 09:54]
+*** DONE rebook sea -> bkk
+CLOSED: [2025-10-27 Mon 10:45]
+*** DONE rebook dmk -> cnx
+CLOSED: [2025-10-31 Fri 09:54]

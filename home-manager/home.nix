@@ -70,6 +70,7 @@
     nerd-fonts.iosevka-term
     nerd-fonts.iosevka
     iosevka
+    age
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -171,6 +172,7 @@
     ".config/fish/functions/e.fish".source = ../config/fish/functions/e.fish;
     ".config/fish/functions/hm-s.fish".source = ../config/fish/functions/hm-s.fish;
     ".config/fish/functions/op-env.fish".source = ../config/fish/functions/op-env.fish;
+    ".config/fish/functions/nd.fish".source = ../config/fish/functions/nd.fish;
     ".config/op/env.fish.tmpl".source = ../config/op/env.fish.tmpl;
     ".config/custom_scripts" = {
       source = ../custom_scripts;

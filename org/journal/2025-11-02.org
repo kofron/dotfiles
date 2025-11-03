@@ -1,0 +1,80 @@
+#+title: Sunday, 02 November 2025
+* Morning checklist
+** DONE Tinnitus check
+CLOSED: [2025-11-02 Sun 09:25]
+About a 3 I think.  Mostly high pitched with a slight warble.  We did go out and I had a couple of drinks last night.
+** DONE Copy calendar for today here
+CLOSED: [2025-11-02 Sun 09:26]
+** DONE Read calendar for tomorrow, next week - any action items move here as TODO
+CLOSED: [2025-11-02 Sun 09:28]
+
+
+* Journal
+We decided (somewhat painfully) to not go to thailand.  My most recent blood panel was still super high and so we had to make the decision sort of last minute, but it was clearly too high to be considered safe.  The doc increased my hydrea to 1g/day and I'm taking it twice a day, morning and night.  Clearly it was not working at 500mg, so lets try 1g.  I've got a follow-up with her when we're back on the 14th so I imagine we'll get our next round of test results that week.  I've also got leveque that following week on monday, which is kind of annoying.
+
+Meidcine is definitely impacting my stomach once it kicks in, but it seems to be getting better every day.  It's weird that it doesn't seem to be nauseating, only makes my shits weird.  But again, it seems to be abating.  I'm holding out hope that it will eventually improve blood flow and maybe even impact my hearing, but who knows.
+
+We drove down to portland yesterday - got here in 3.5hrs or so.  The drive was good and uneventful (in a good way).  There were a couple of stressful moments with bad drivers, but it all worked out.  Our food last night (malaysian street food at omas) was insanely good, especially this curry sauce & roti thing they had.  Portland is way cooler than I remember it being!
+
+I am loving org for journaling and really want to use it more for other stuff.  I'm going to get into it.  I'm thinking maybe I could also use projectile to keep org and project separate????
+
+Also: Stay more hydrated!!!!!
+
+* Plan for today
+** TODO should look at tickets for monday!
+
+* Notes from today
+* Plan for today
+** <2025-11-02 Sun 10:30> Brunch @ korean spot
+** DONE Laundry
+CLOSED: [2025-11-02 Sun 09:26]
+** DONE Repack for OR, check OR weather
+CLOSED: [2025-11-02 Sun 09:27]
+** TODO Weather: will it be nice enough for the mixer?
+** TODO reach out to PSL re: address & options
+*** TODO address
+*** DONE options
+CLOSED: [2025-11-02 Sun 09:27]
+** DONE passports awayp
+CLOSED: [2025-11-02 Sun 09:27]
+** Tonight
+*** TODO Clean rifle
+*** TODO need to make sure we are marking our stud lines before we completely finish the walls!  That will make our lives way easier when it's time to lag.
+ Before we leave
+*** TODO cactus
+**** TODO *hooks on, sites identified
+**** TODO cactus moved
+*** TODO finish the tomato thing
+* Before we go
+** DONE water bottle
+CLOSED: [2025-11-02 Sun 09:27]
+** DONE Trash out
+CLOSED: [2025-11-02 Sun 09:28]
+
+* Random stuff
+** TODO agent-shell
+** IDEA org p2p replication
+** TODO Cancel eero
+** TODO cancel ynab
+** TODO rocket money or something
+** TODO Cancel bitwarden
+** IDEA iroh service discovery
+** TODO More colors for different TODO types
+
+* Super
+** TODO provisioning accounts - pulumi?
+** Style guide ideas
+*** Claude style guide enforcement in CI
+Can we have draft-by-default?
+*** Composition over inheritance
+**** Avoid classes
+**** Small interfaces
+**** Prefer the "state advance" pattern for core code, manage state in application layer
+*** Functional Core, Imperative Shell
+*** No globals
+*** PR auto-reject over 500 lines?
+*** Code should imitate life
+Whenever possible, where we have domain language that we use when communicating with customers/team, it should be reflected in the codebase
+*** Forbid importing from submodules & dont export private interfaces
+*** Forbid importing inside packages without @ reference
+e.g. no import {X} from "../../packages/Y/a/b/c" -> import {X} from "@super/Y"

@@ -1,0 +1,11 @@
+#+title: AI
+
+* IDEA Context transfer
+Alright, so we want to have our interviewing system be kind of our superpower.
+
+What we could do is measure 'context transfer'.  The intuition here is as follows: how would you know if an interviewer was a good interviewer?  Well, you would interview the interviweer.  The more they could prove they had learned about the interviewee, the better of an interviewer you would say they were.
+
+So, what we would do here is this.  We would have a persona that represented a customer, and we would give it some facts about itself.  It would be instructed (carefully) to not reveal those without being prompted.  For example, how many employees are at a company, or
+whatever.
+
+Then, you have that persona get interviewed by our chatbot.  After every round of conversation, you can ask the chatbot to tell you the personal details that are 'hidden' by the persona.  You can actually measure the mutual information in the conversation on a turn-by-turn basis to figure out how good your chatbot prompt is.
