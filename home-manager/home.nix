@@ -110,8 +110,8 @@
           }
         },
         "theme": "Catppuccin Macchiato",
-        "ui_font_family": "Iosevka",
-        "buffer_font_family": "Iosevka",
+        "ui_font_family": ".ZedMono",
+        "buffer_font_family": ".ZedMono",
         "ui_font_size": 11,
         "buffer_font_size": 11,
         "lsp": {
