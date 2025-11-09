@@ -20,9 +20,6 @@ I am loving org for journaling and really want to use it more for other stuff.  
 
 Also: Stay more hydrated!!!!!
 
-* Plan for today
-** TODO should look at tickets for monday!
-
 * Notes from today
 * Plan for today
 ** <2025-11-02 Sun 10:30> Brunch @ korean spot
@@ -30,21 +27,8 @@ Also: Stay more hydrated!!!!!
 CLOSED: [2025-11-02 Sun 09:26]
 ** DONE Repack for OR, check OR weather
 CLOSED: [2025-11-02 Sun 09:27]
-** TODO Weather: will it be nice enough for the mixer?
-** TODO reach out to PSL re: address & options
-*** TODO address
-*** DONE options
-CLOSED: [2025-11-02 Sun 09:27]
 ** DONE passports awayp
 CLOSED: [2025-11-02 Sun 09:27]
-** Tonight
-*** TODO Clean rifle
-*** TODO need to make sure we are marking our stud lines before we completely finish the walls!  That will make our lives way easier when it's time to lag.
- Before we leave
-*** TODO cactus
-**** TODO *hooks on, sites identified
-**** TODO cactus moved
-*** TODO finish the tomato thing
 * Before we go
 ** DONE water bottle
 CLOSED: [2025-11-02 Sun 09:27]
@@ -52,17 +36,9 @@ CLOSED: [2025-11-02 Sun 09:27]
 CLOSED: [2025-11-02 Sun 09:28]
 
 * Random stuff
-** TODO agent-shell
 ** IDEA org p2p replication
-** TODO Cancel eero
-** TODO cancel ynab
-** TODO rocket money or something
-** TODO Cancel bitwarden
 ** IDEA iroh service discovery
-** TODO More colors for different TODO types
-
 * Super
-** TODO provisioning accounts - pulumi?
 ** Style guide ideas
 *** Claude style guide enforcement in CI
 Can we have draft-by-default?

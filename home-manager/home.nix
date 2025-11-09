@@ -1,9 +1,7 @@
-{ config, pkgs, ... }:
+{ config, pkgs, pkgsUnstable, zedPkg, ... }:
 
 {
-  imports = [
-    ./git.nix
-  ];
+  imports = [ ./git.nix ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "kofron";
@@ -27,51 +25,53 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = with pkgs; [
-    brightnessctl
-    brave
-    blueman
-    bun
-    cmus
-    flameshot
-    font-awesome
-    ghostty
-    grim
-    jq
-    keymapp
-    libnotify
-    librewolf
-    lm_sensors
-    mako
-    mate.mate-polkit
-    mkcert
-    networkmanagerapplet
-    nixfmt
-    nodejs_22
-    pavucontrol
-    pcmanfm
-    playerctl
-    ripgrep
-    roboto
-    signal-desktop
-    slurp
-    swaybg
-    sway
-    swayidle
-    swaylock-effects
-    waybar
-    wireplumber
-    wl-clipboard
-    wlsunset
-    upower
-    zathura
-    zellij
-    feh
-    nerd-fonts.iosevka-term
-    nerd-fonts.iosevka
-    iosevka
-    age
-  ];
+  # most packages from stable
+  home.packages = with pkgs;
+    [
+      brightnessctl
+      brave
+      blueman
+      bun
+      cmus
+      flameshot
+      font-awesome
+      ghostty
+      grim
+      jq
+      keymapp
+      libnotify
+      librewolf
+      lm_sensors
+      mako
+      mate.mate-polkit
+      mkcert
+      networkmanagerapplet
+      nixfmt
+      nodejs_22
+      pavucontrol
+      pcmanfm
+      playerctl
+      ripgrep
+      roboto
+      signal-desktop
+      slurp
+      swaybg
+      sway
+      swayidle
+      swaylock-effects
+      waybar
+      wireplumber
+      wl-clipboard
+      wlsunset
+      upower
+      zathura
+      zellij
+      feh
+      nerd-fonts.iosevka-term
+      nerd-fonts.iosevka
+      iosevka
+      age
+    ] ++ [ zedPkg ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
@@ -112,8 +112,8 @@
         "theme": "Catppuccin Macchiato",
         "ui_font_family": "Iosevka",
         "buffer_font_family": "Iosevka",
-        "ui_font_size": 8,
-        "buffer_font_size": 8,
+        "ui_font_size": 11,
+        "buffer_font_size": 11,
         "lsp": {
 
           "pyright": {
@@ -170,8 +170,10 @@
       recursive = true;
     };
     ".config/fish/functions/e.fish".source = ../config/fish/functions/e.fish;
-    ".config/fish/functions/hm-s.fish".source = ../config/fish/functions/hm-s.fish;
-    ".config/fish/functions/op-env.fish".source = ../config/fish/functions/op-env.fish;
+    ".config/fish/functions/hm-s.fish".source =
+      ../config/fish/functions/hm-s.fish;
+    ".config/fish/functions/op-env.fish".source =
+      ../config/fish/functions/op-env.fish;
     ".config/fish/functions/nd.fish".source = ../config/fish/functions/nd.fish;
     ".config/op/env.fish.tmpl".source = ../config/op/env.fish.tmpl;
     ".config/custom_scripts" = {
@@ -247,12 +249,10 @@
 
   programs.fish = {
     enable = true;
-    plugins = [
-      {
-        name = "pure";
-        src = pkgs.fishPlugins.pure.src;
-      }
-    ];
+    plugins = [{
+      name = "pure";
+      src = pkgs.fishPlugins.pure.src;
+    }];
     interactiveShellInit = ''
       set -g fish_greeting
     '';

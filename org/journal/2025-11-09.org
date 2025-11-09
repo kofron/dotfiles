@@ -1,0 +1,157 @@
+#+title: Sunday, 09 November 2025
+* Morning checklist
+** DONE Tinnitus check
+CLOSED: [2025-11-09 Sun 08:52]
+Maybe a 2/10.  I want to figure out a way to be more quantitative about this!  I'm thinking about some kind of tunable masking white noise that I could measure easily on my phone...
+** DONE Copy calendar for today here
+CLOSED: [2025-11-09 Sun 08:53]
+** DONE Read calendar for tomorrow, next week - any action items move here as TODO
+CLOSED: [2025-11-09 Sun 08:59]
+
+* Journal
+Oof rough day yesterday.  I know on some level I'm being dramatic about this but I can't help but feel like I'm dying.  I need to read some more papers... there was that good article
+in Blood that I need to pull over.  At the end of the day, the data is tricky to understand because it's somewhat left-censored.   But it's pretty clear that if this progresses to PMF, my goose
+is cooked.  So we need to do everything we can to prevent that, which I *think* is all about managing platelet burden.  But that's a conversation with the doc and much more reading.
+
+Looooooots on the ol' TODO list today.  I actually feel pretty good about getting it all done.
+
+Tomorrow is my first day in the office for real!
+
+
+* Plan for today
+** DONE check cooking for tomorrow
+CLOSED: [2025-11-09 Sun 09:42]
+** TODO Cook tonight (see chatgpt): Spinach–tomato–feta frittata (9×13 pan; 8 eggs, spinach, tomatoes, feta).
+** DONE ai lit search for CALR
+CLOSED: [2025-11-09 Sun 10:14]
+*** DONE chatgpt
+CLOSED: [2025-11-09 Sun 09:37]
+*** DONE google
+CLOSED: [2025-11-09 Sun 10:14]
+*** DONE claude
+CLOSED: [2025-11-09 Sun 10:06]
+** TODO check on semantic search api
+** TODO archery backpack setup?
+** TODO sg hunter orange vest?
+** DONE pull reading list out of signal
+CLOSED: [2025-11-09 Sun 09:49]
+** TODO reorder adderall
+** TODO siding
+** TODO re-hang drywall in shop
+** DONE wild alaska?
+CLOSED: [2025-11-09 Sun 10:07]
+** DONE message dr. leveque
+CLOSED: [2025-11-09 Sun 09:56]
+** TODO pick up planting compost/worm castings
+** TODO pot plants
+*** TODO rubber
+*** TODO jade
+** TODO display port cables for monitors @ office
+** DONE check on framework order
+CLOSED: [2025-11-09 Sun 09:59]
+** DONE zed font size
+CLOSED: [2025-11-09 Sun 10:22]
+** TODO Weather: will it be nice enough for the mixer?
+** TODO text patt
+** DONE email eric
+CLOSED: [2025-11-09 Sun 10:00]
+** TODO org mode and org replication
+** TODO call li
+** TODO sched w/j&d on friday
+** DONE dave & graham
+CLOSED: [2025-11-09 Sun 10:01]
+** DONE download platelets article
+CLOSED: [2025-11-09 Sun 10:01]
+** TODO zed extension api expansion?
+** TODO money
+*** TODO copilot
+*** TODO pay cc etc
+*** TODO get ready for facet mtg on the 18th
+*** TODO money to dad/katie?
+** TODO reach out to PSL re: address & options
+*** TODO address
+*** DONE options
+CLOSED: [2025-11-02 Sun 09:27]
+** Tonight
+*** TODO Clean rifle
+*** TODO need to make sure we are marking our stud lines before we completely finish the walls!  That will make our lives way easier when it's time to lag.
+ Before we leave
+*** TODO cactus
+**** TODO *hooks on, sites identified
+**** TODO cactus moved
+*** TODO finish the tomato thing
+* Random stuff
+** TODO agent-shell
+** TODO Cancel eero
+** TODO cancel ynab
+** TODO rocket money or something
+** TODO Cancel bitwarden
+** TODO More colors for different TODO types
+** TODO cancel one medical (amazon)
+** TODO Bone dice for daniel?
+
+* Super
+** TODO provisioning accounts - pulumi?
+* Reading
+** Tongyi Deep Research [https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/]
+** SOTA on CALR [https://ashpublications.org/blood/article/134/25/2242/374997/Mutant-calreticulin-in-myeloproliferative]
+** Essential Thrombocythemia - Contemporary Management (April 2024) [https://pubmed.ncbi.nlm.nih.gov/38252902/]
+Most current comprehensive review covering diagnosis, risk stratification, and management of ET with extensive discussion of CALR mutations as major diagnostic criteria. Details CALR-1 vs CALR-2 clinical differences. Published in American Journal of Hematology.
+** Mutant calreticulin in myeloproliferative neoplasms (December 2019) [https://ashpublications.org/blood/article/134/25/2242/374997/Mutant-calreticulin-in-myeloproliferative]
+Definitive mechanistic review explaining how mutant CALR activates MPL and JAK-STAT signaling. Distinguished type 1 (52-bp deletion) from type 2 (5-bp insertion) mutations and their differential clinical phenotypes. The most comprehensive mechanistic analysis available.
+** The Contemporary Approach to CALR-Positive Myeloproliferative Neoplasms (March 2021) [https://pmc.ncbi.nlm.nih.gov/articles/PMC8038093/]
+Most comprehensive CALR-specific review covering mutation classification (AGADIR algorithm), detection methodologies, mechanistic pathogenesis, and diagnostic algorithms. Invaluable for understanding CALR testing implementation.
+** Differential clinical effects of different mutation subtypes in CALR-mutant myeloproliferative neoplasms (February 2016) [https://pmc.ncbi.nlm.nih.gov/articles/PMC4740452/]
+Landmark study establishing type 1-like vs type 2-like classification. Demonstrated that type 2 mutations associate with youngest age, highest platelet counts (982 vs 700×10⁹/L), and lowest thrombosis risk (4.3% vs 20.6%). Critical for understanding 5ins mutation phenotype.
+** Type 1 versus Type 2 calreticulin mutations in essential thrombocythemia (August 2014) [https://pubmed.ncbi.nlm.nih.gov/24753125/]
+Collaborative study of 1,027 patients definitively characterizing type 1 vs type 2 differences. Showed type 2 CALR associates with significantly higher platelet counts and younger age at diagnosis.
+** Unmet clinical needs in the management of CALR-mutated essential thrombocythemia (September 2021) [https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(21)00204-0/abstract]
+European LeukemiaNet consensus providing risk stratification and treatment algorithms specific to CALR-mutated ET. Establishes that CALR-mutated patients require distinct therapeutic approaches from JAK2-positive disease.
+** Analysis of phenotype and outcome in essential thrombocythemia with CALR or JAK2 mutations (July 2015) [https://haematologica.org/article/view/7434]
+Demonstrated CALR-mutated ET patients show younger age, higher platelets, lower hemoglobin, and better overall survival compared to JAK2-positive patients. Important prognostic study from CRIMM Florence.
+** Update from the latest WHO classification of MPNs: a user's manual (2016) [https://pmc.ncbi.nlm.nih.gov/articles/PMC6142477/]
+Authoritative WHO classification review incorporating CALR mutations as major diagnostic criterion. Details diagnostic algorithms and mutually exclusive mutation patterns. Essential reference for diagnostic implementation.
+** CALR mutation burden in essential thrombocythemia and disease outcome (March 2024) [https://ashpublications.org/blood/article/143/13/1310/514710/CALR-mutation-burden-in-essential-thrombocythemia]
+Latest prognostic refinement showing CALR variant allele frequency ≥60% associates with shorter myelofibrosis-free survival, particularly for type 1 mutations. Clinically actionable for monitoring decisions.
+** Somatic CALR Mutations in Myeloproliferative Neoplasms with Nonmutated JAK2 (December 2013) [https://www.nejm.org/doi/full/10.1056/NEJMoa1312542]
+Original discovery paper by Nangalia et al. identifying CALR mutations in 70-84% of JAK2-negative ET/PMF cases. Characterized type 1 (52-bp deletion) and type 2 (5-bp insertion) as most common variants. Most cited paper in MPN molecular genetics.
+** Somatic Mutations of Calreticulin in Myeloproliferative Neoplasms (December 2013) [https://www.nejm.org/doi/full/10.1056/NEJMoa1311347]
+Simultaneous discovery paper by Klampfl et al. establishing CALR as early driver event. Provides complementary perspective to Nangalia paper on CALR mutation discovery and initial characterization.
+
+** Unfolding the Role of Calreticulin in Myeloproliferative Neoplasm Pathogenesis (May 2019) [https://pmc.ncbi.nlm.nih.gov/articles/PMC6522317/]
+Examines over 50 CALR variants emphasizing common positively charged C-terminus mechanism. Highlights differential oncogenic potency between type 1 and type 2 mutations based on animal model data.
+** Regulatory Effects of Curcumin on Platelets [https://www.mdpi.com/2227-9059/10/12/3180]
+** Novel Strategies Targeting Mutant Calreticulin in Essential Thrombocythemia and Myelofibrosis [[https://pubmed.ncbi.nlm.nih.gov/40857671/](https://pubmed.ncbi.nlm.nih.gov/40857671/)]
+Therapeutic-focused review (Blood, 2025) on mutant-CALR biology and drug strategies (mAbs, bispecifics, vaccines, CAR-T/ADCs); contrasts type 1 (del52) vs type 2 (5-bp “5ins”). ([PubMed][1])
+** Mutant Calreticulin in MPN: Mechanistic Insights and Therapeutic Implications [[https://pmc.ncbi.nlm.nih.gov/articles/PMC12085081/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12085081/)]
+State-of-the-art 2025 review (Curr Hematol Malig Rep) on CALR/MPL signaling, surface complex formation, and emerging CALR-directed therapies—relevant across ET and MF. ([PMC][2])
+** CALR-mutated myeloproliferative neoplasms [[https://www.tandfonline.com/doi/full/10.1080/10428194.2025.2465551](https://www.tandfonline.com/doi/full/10.1080/10428194.2025.2465551)]
+Broad 2025 narrative review (Leukemia & Lymphoma) covering CALR structure, genotype–phenotype correlations (incl. ET enrichment of type 2/5ins), prognosis, and treatment. ([Taylor & Francis Online][3])
+** Antibody targeting of mutant calreticulin in myeloproliferative neoplasms [[https://onlinelibrary.wiley.com/doi/10.1111/jcmm.17896](https://onlinelibrary.wiley.com/doi/10.1111/jcmm.17896)]
+2024 review (J Cell Mol Med) focused on anti-mutant-CALR antibody approaches; discusses opportunities and pitfalls (e.g., circulating mut-CALR as a decoy). ([Wiley Online Library][4])
+** Essential thrombocythemia: 2024 update on diagnosis, risk stratification, and management [[https://onlinelibrary.wiley.com/doi/10.1002/ajh.27216](https://onlinelibrary.wiley.com/doi/10.1002/ajh.27216)]
+Authoritative clinical review (Am J Hematol, 2024) that explicitly delineates CALR type 1 (del52) vs type 2 (5-bp insertion) and their implications for ET risk and management. ([Wiley Online Library][5])
+** Essential Thrombocythemia: A Review [[https://jamanetwork.com/journals/jama/article-abstract/2829595](https://jamanetwork.com/journals/jama/article-abstract/2829595)]
+High-level 2025 clinical review (JAMA) summarizing ET pathophysiology, genotype frequencies (JAK2/CALR/MPL), and contemporary care—useful context alongside CALR-specific reviews. ([JAMA Network][6])
+** Challenges in the Evolving Role of Calreticulin as a Therapeutic Target in Myeloproliferative Neoplasms [[https://www.mdpi.com/2072-6694/17/21/3397](https://www.mdpi.com/2072-6694/17/21/3397)]
+Open-access 2025 review (Cancers) synthesizing CALR-targeted modalities (mAbs, bispecifics, ADCs, CAR-T) and early clinical signals; helpful landscape scan. ([MDPI][7])
+
+[1]: https://pubmed.ncbi.nlm.nih.gov/40857671/?utm_source=chatgpt.com "Novel Strategies Targeting Mutant Calreticulin in Essential ..."
+[2]: https://pmc.ncbi.nlm.nih.gov/articles/PMC12085081/?utm_source=chatgpt.com "Mutant Calreticulin in MPN: Mechanistic Insights and ..."
+[3]: https://www.tandfonline.com/doi/full/10.1080/10428194.2025.2465551?src=&utm_source=chatgpt.com "Full article: CALR-mutated myeloproliferative neoplasms"
+[4]: https://onlinelibrary.wiley.com/doi/10.1111/jcmm.17896?utm_source=chatgpt.com "Antibody targeting of mutant calreticulin in ..."
+[5]: https://onlinelibrary.wiley.com/doi/10.1002/ajh.27216?utm_source=chatgpt.com "Essential thrombocythemia: 2024 update on diagnosis, risk ..."
+[6]: https://jamanetwork.com/journals/jama/article-abstract/2829595 "Essential Thrombocythemia: A Review | Hematology | JAMA | JAMA Network"
+[7]: https://www.mdpi.com/2072-6694/17/21/3397?utm_source=chatgpt.com "Challenges in the Evolving Role of Calreticulin as ..."
+
+
+** Sheaf theory through examples (Rosiak)
+* Black friday
+** Zojirushi
+** Reloading?
+** Watch
+* Stadiametric sight
+** TODO order some 4mm lead screws to play with
+** TODO servo drive box?
+* Recipe management
+** IDEA What about using org more for recipes??
