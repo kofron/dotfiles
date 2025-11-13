@@ -1,5 +1,4 @@
 {
-  "base_keymap": "Emacs",
   "edit_predictions": {
     "mode": "subtle",
     "copilot": {
