@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "context": "Editor && !Search && !Terminal",
+      "bindings": [
+        {
+          "key": "ctrl-a",
+          "command": "cursor:line_start"
+        },
+        {
+          "key": "ctrl-e",
+          "command": "cursor:line_end"
+        }
+      ]
+    }
+  ]
+}

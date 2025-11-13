@@ -1,0 +1,6 @@
+not using notion, using hubspot
+transcript summarizer
+- env file that adam has for hubspot
+- apprunner has all keys
+- ui for chatkit doesn't seem super customizable
+- we're serving our react component from index.tsx from ecr

@@ -1,0 +1,11 @@
+#+title: Monday, 10 November 2025
+* Journal
+
+
+* Plan for today
+
+
+* Notes from today
+* Plan for today
+** DONE clean counter
+CLOSED: [2025-11-11 Tue 09:17]

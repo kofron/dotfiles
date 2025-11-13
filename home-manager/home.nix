@@ -71,6 +71,7 @@
       nerd-fonts.iosevka
       iosevka
       age
+      slack
     ] ++ [ zedPkg ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -88,6 +89,7 @@
     # '';
     ".config/zed/settings.json".text = ''
       {
+        "base_keymap": "Emacs",
         "edit_predictions": {
           "mode": "subtle",
           "copilot": {

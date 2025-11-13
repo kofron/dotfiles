@@ -1,0 +1,104 @@
+#+title: Thursday, 13 November 2025
+* Morning checklist
+** DONE Tinnitus check
+CLOSED: [2025-11-13 Thu 09:42]
+2 or so.  not too bad today.  mostly high pitched i would say
+** DONE Copy calendar for today here
+CLOSED: [2025-11-13 Thu 09:58]
+** TODO Read calendar for tomorrow, next week - any action items move here as TODO
+
+** TODO Drain emails - flag TODOs
+*** TODO Personal
+*** TODO Super
+
+* Journal
+Oof I'm getting pretty behind on TODOs!  I need to do some catching up.
+
+I also switched back to the moonlander.  It's so nice, but my hands are hilariously not used to this.  We'll get there!
+
+There's just so much more mapping we can do.  And the navigator really didn't feel right to me.
+
+
+
+* Morning checklist
+** TODO Drain emails - flag TODOs
+*** TODO Personal
+*** DONE Super
+CLOSED: [2025-11-12 Wed 09:31]
+
+* Plan for today
+** TODO reach out to li
+** <2025-11-13 Thu 10:00> adam catch-up
+** <2025-11-13 Thu 15:00> jordan schwartz re: ai workflow
+** TODO get the house ready for ana tomorrow
+** TODO review jordan's messages
+** TODO Figma sub - we want figjam
+** TODO grab svg assets from design and add them to our repo
+** DONE Afternoon - work on darigold system
+CLOSED: [2025-11-13 Thu 09:49]
+** TODO Temporal support portal
+*** TODO Fuse about temporal?
+** TODO pay VM
+** TODO Pendleton returns
+** TODO COBRA
+** TODO write up values/policy doc w/PTO - include guidelines #super
+** TODO pay UW
+** TODO Redeem youtube tv credit - 'Updates' in membership settings
+** TODO start travel insurance claim
+** TODO get more context on sam strock - meeting with him tomorrow
+** TODO check on semantic search api
+** TODO deep research how to get calibrated white noise level on linux
+** TODO set up calendar
+*** TODO working locations
+*** TODO working hours
+** TODO archery backpack setup?
+** TODO sg hunter orange vest?
+** TODO call stupid gtg
+** TODO add emails to daily journal template
+** TODO reorder adderall
+** TODO siding
+*** TODO get nails - 7d 2.5" simpson annular ring diamond poitn
+*** TODO cut boards
+** TODO mason bees
+** TODO pot plants
+*** TODO rubber
+*** TODO jade
+** TODO Weather: will it be nice enough for the mixer?
+** TODO text patt
+** TODO org mode and org replication
+** TODO call li
+** TODO sched w/j&d on friday
+** TODO zed extension api expansion?
+** TODO money
+*** TODO copilot
+*** TODO pay cc etc
+*** TODO get ready for facet mtg on the 18th
+*** TODO money to dad/katie?
+** TODO reach out to PSL re: address & options
+*** TODO address
+*** DONE options
+CLOSED: [2025-11-02 Sun 09:27]
+** Tonight
+*** TODO Clean rifle
+*** TODO need to make sure we are marking our stud lines before we completely finish the walls!  That will make our lives way easier when it's time to lag.
+ Before we leave
+*** TODO cactus
+**** TODO *hooks on, sites identified
+**** TODO cactus moved
+*** TODO finish the tomato thing
+* Random stuff
+** TODO agent-shell
+** TODO Cancel eero
+** TODO cancel ynab
+** TODO rocket money or something
+** TODO Cancel bitwarden
+** TODO More colors for different TODO types
+** TODO cancel one medical (amazon)
+** TODO Bone dice for daniel?
+
+* Super
+** TODO provisioning accounts - pulumi?
+** TODO marketing site - astro?
+* Stadiametric sight
+** TODO order some 4mm lead screws to play with
+** TODO servo drive box?
