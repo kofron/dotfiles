@@ -1,17 +1,9 @@
-{
-  "bindings": [
-    {
-      "context": "Editor && !Search && !Terminal",
-      "bindings": [
-        {
-          "key": "ctrl-a",
-          "command": "cursor:line_start"
-        },
-        {
-          "key": "ctrl-e",
-          "command": "cursor:line_end"
-        }
-      ]
+[
+  {
+    "context": "Editor && !Search && !Terminal",
+    "bindings": {
+      "ctrl-a": ["editor::MoveToBeginningOfLine", { "stop_at_soft_wraps": true, "stop_at_indent": true }],
+      "ctrl-e": ["editor::MoveToEndOfLine", { "stop_at_soft_wraps": true }]
     }
-  ]
-}
+  }
+]

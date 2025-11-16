@@ -87,86 +87,8 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".config/zed/settings.json".text = ''
-      {
-        "base_keymap": "Emacs",
-        "edit_predictions": {
-          "mode": "subtle",
-          "copilot": {
-            "proxy": null,
-            "proxy_no_verify": null
-          },
-          "enabled_in_text_threads": false
-        },
-        "show_edit_predictions": true,
-        "features": {
-          "edit_prediction_provider": "zed"
-        },
-        "inlay_hints": {
-          "toggle_on_modifiers_press": {
-            "control": true,
-            "shift": false,
-            "alt": false,
-            "platform": false,
-            "function": false
-          }
-        },
-        "theme": "Catppuccin Macchiato",
-        "ui_font_family": ".ZedMono",
-        "buffer_font_family": ".ZedMono",
-        "ui_font_size": 11,
-        "buffer_font_size": 11,
-        "lsp": {
-
-          "pyright": {
-            "settings": {
-              "python.analysis": {
-                "diagnosticMode": "workspace",
-                "typeCheckingMode": "strict"
-              },
-              "python": {
-                "pythonPath": ".venv/bin/python"
-              }
-            }
-          }
-        },
-        "languages": {
-          "Markdown": {
-            "show_edit_predictions": false
-          },
-          "SQL": {
-            "language_servers": [
-              "postgres_lsp"
-            ],
-            "enable_language_server": true
-          },
-          "Rust": {
-            "format_on_save": "on",
-            "formatter": "language_server"
-          },
-          "Python": {
-            "language_servers": [
-              "pyright",
-              "ruff"
-            ],
-            "format_on_save": "on",
-            "formatter": [
-              {
-                "code_actions": {
-                  "source.organizeImports.ruff": true,
-                  "source.fixAll.ruff": true
-                }
-              },
-              {
-                "language_server": {
-                  "name": "ruff"
-                }
-              }
-            ]
-          }
-        }
-      }
-    '';
+    ".config/zed/settings.json".source = ./zed/settings.json;
+    ".config/zed/keymap.json".source = ./zed/keymap.json;
     ".config/doom" = {
       source = ../config/doom;
       recursive = true;

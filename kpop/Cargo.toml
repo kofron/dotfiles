@@ -1,3 +1,3 @@
 [workspace]
 resolver = "3"
-members = ["k", "tailscale-node-status"]
+members = ["k", "org", "tailscale-node-status"]
