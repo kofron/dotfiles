@@ -3300,6 +3300,9 @@ pub mod projectors {
             // Merge bucketed TODOs into new file.
             let mut roots = std::mem::take(&mut new_file.headings);
             for (path_vec, todos) in buckets.into_flat_vec() {
+                if verbose {
+                    eprintln!("Merging {} todos under path {:?}", todos.len(), path_vec);
+                }
                 let parent = ensure_path(&mut roots, &path_vec);
                 merge_todos(parent, todos);
             }
@@ -3395,12 +3398,22 @@ pub mod projectors {
             }
             let this_title = h.title.plain_text();
             let use_as_group = !looks_like_date_heading(&this_title) || !path.is_empty();
+            let parent_len = path.len();
             if use_as_group {
                 path.push(this_title.clone());
             }
 
-            if is_incomplete_todo(h, &file.settings) {
-                let key_path = normalized_path(path);
+            let is_todo = is_incomplete_todo(h, &file.settings);
+            if is_todo {
+                if verbose {
+                    eprintln!("  TODO candidate {:?}", h.title.plain_text());
+                }
+                // Deduplicate using the parent path so we don't synthesize an intermediate heading.
+                let key_path = if use_as_group {
+                    normalized_path(&path[..parent_len])
+                } else {
+                    normalized_path(path)
+                };
                 let title_key = normalize(&h.title.plain_text());
                 let dedupe_key = (key_path.clone(), title_key.clone());
                 if !seen.contains(&dedupe_key) {
@@ -3412,6 +3425,9 @@ pub mod projectors {
                     reschedule_planning_in_place(&mut copy.planning, target_date, policy);
                     scrub_heading_sources(&mut copy);
 
+                    if verbose {
+                        eprintln!("  Added TODO {:?}", copy.title.plain_text());
+                    }
                     buckets.push(key_path, copy);
                 }
             }
@@ -3668,6 +3684,13 @@ pub mod projectors {
                     parent.children.push(todo);
                 }
             }
+            if parent.children.len() % 10 == 0 {
+                eprintln!(
+                    "Merged {} children under {:?}",
+                    parent.children.len(),
+                    parent.title.plain_text()
+                );
+            }
         }
 
         #[cfg(test)]
@@ -3698,6 +3721,62 @@ pub mod projectors {
                 } else {
                     panic!("expected source_text to be populated");
                 }
+            }
+
+            #[test]
+            fn carry_over_todos_without_intermediate_heading() {
+                let template =
+                    parse_org_from_str(None, "* Plan for today\n").expect("template parse");
+                let journal = parse_org_from_str(
+                    None,
+                    "* Plan for today\n** TODO pay VM\n** TODO reach out to Li\n",
+                )
+                .expect("journal parse");
+
+                let entry = build_from_files(
+                    &template,
+                    [&journal],
+                    NaiveDate::from_ymd_opt(2025, 2, 2).unwrap(),
+                    false,
+                );
+
+                let plan = entry.headings.first().expect("plan heading");
+                assert_eq!(plan.title.plain_text(), "Plan for today");
+                assert_eq!(plan.children.len(), 2);
+                assert!(plan.children.iter().all(|child| child.todo.is_some()));
+                let titles: Vec<_> = plan
+                    .children
+                    .iter()
+                    .map(|child| child.title.plain_text())
+                    .collect();
+                assert_eq!(
+                    titles,
+                    vec!["pay VM".to_string(), "reach out to Li".to_string()]
+                );
+            }
+
+            #[test]
+            fn rebuilding_with_existing_entry_is_idempotent() {
+                let template =
+                    parse_org_from_str(None, "* Plan for today\n").expect("template parse");
+                let journal = parse_org_from_str(
+                    None,
+                    "* Plan for today\n** TODO pay VM\nSCHEDULED: <2025-02-01>\n",
+                )
+                .expect("journal parse");
+
+                let date = NaiveDate::from_ymd_opt(2025, 2, 2).unwrap();
+                let entry_first = build_from_files(&template, [&journal], date, false);
+
+                let formatted = format_org_file(&entry_first);
+                let entry_roundtrip =
+                    parse_org_from_str(None, &formatted).expect("roundtrip parse");
+
+                let entry_second =
+                    build_from_files(&entry_roundtrip, [&journal, &entry_roundtrip], date, false);
+
+                let formatted_second = format_org_file(&entry_second);
+                assert_eq!(formatted_second, formatted);
             }
         }
 

@@ -79,15 +79,18 @@ struct JournalNewArgs {
     /// Template Org file used as the base for the new entry.
     #[arg(long)]
     template: PathBuf,
-    /// Directory containing journal entries to scan (parsed recursively).
-    #[arg(long)]
-    journal_dir: PathBuf,
+    /// Org files or directories containing journal entries to scan.
+    #[arg(required = true)]
+    inputs: Vec<PathBuf>,
     /// Target date for the new journal entry. Defaults to today.
     #[arg(long)]
     date: Option<NaiveDate>,
     /// Write the resulting OrgFile JSON to this path instead of stdout.
     #[arg(long)]
     output: Option<PathBuf>,
+    /// Write the new entry into the resolved journal directory (auto-named YYYY-MM-DD.org).
+    #[arg(long)]
+    write: bool,
     /// Output format (JSON or canonical Org text).
     #[arg(long, value_enum, default_value_t = JournalOutputFormat::Json)]
     emit: JournalOutputFormat,
@@ -259,22 +262,29 @@ fn handle_agenda(args: AgendaArgs, verbose: bool) -> Result<()> {
 
 fn handle_journal_new(args: JournalNewArgs, verbose: bool) -> Result<()> {
     let JournalNewArgs {
-        template,
-        journal_dir,
+        template: template_path,
+        inputs,
         date,
         output,
+        write,
         emit,
     } = args;
 
-    let parser = NomOrgParser;
-    let template = parser
-        .parse_file(&template)
-        .with_context(|| format!("parsing template {:?}", template))?;
+    if write && output.is_some() {
+        anyhow::bail!("--write cannot be combined with --output");
+    }
 
-    let journal_paths = collect_org_files(&journal_dir, verbose)
-        .with_context(|| format!("scanning {:?}", journal_dir))?;
+    let parser = NomOrgParser;
+    let mut template = parser
+        .parse_file(&template_path)
+        .with_context(|| format!("parsing template {:?}", template_path))?;
+
+    let expanded = expand_inputs(&inputs, verbose)?;
+    if expanded.is_empty() && verbose {
+        eprintln!("warning: no Org files found in the provided inputs");
+    }
     let mut journal_files = Vec::new();
-    for path in &journal_paths {
+    for path in &expanded {
         match parser.parse_file(path) {
             Ok(file) => {
                 if verbose {
@@ -287,12 +297,59 @@ fn handle_journal_new(args: JournalNewArgs, verbose: bool) -> Result<()> {
     }
 
     let date = date.unwrap_or_else(|| Local::now().date_naive());
+
+    let (target_path, existed) = if write {
+        let write_dir = resolve_write_directory(&inputs)
+            .context("determining write directory for journal entry")?;
+        let candidate = write_dir.join(format!("{date}.org"));
+        let existed = candidate.exists();
+        if existed {
+            if verbose {
+                eprintln!(
+                    "Existing entry found at {:?}; using it as template",
+                    candidate
+                );
+            }
+            template = parser
+                .parse_file(&candidate)
+                .with_context(|| format!("parsing existing entry {:?}", candidate))?;
+        }
+        (Some(candidate), existed)
+    } else {
+        (None, false)
+    };
+
     let new_entry = journal_new_entry_projector::build_from_files(
         &template,
         journal_files.iter(),
         date,
         verbose,
     );
+
+    if let Some(target_path) = target_path {
+        let text = format_org_file(&new_entry);
+        fs::write(&target_path, text.as_bytes())
+            .with_context(|| format!("writing {:?}", target_path))?;
+        if existed {
+            println!("Updated existing journal entry at {:?}", target_path);
+        } else {
+            println!("Wrote new journal entry to {:?}", target_path);
+        }
+
+        match emit {
+            JournalOutputFormat::Json => {
+                let json = serde_json::to_string_pretty(&new_entry)?;
+                println!("{json}");
+            }
+            JournalOutputFormat::Org => {
+                print!("{text}");
+                if !text.ends_with('\n') {
+                    println!();
+                }
+            }
+        }
+        return Ok(());
+    }
 
     match emit {
         JournalOutputFormat::Json => {
@@ -328,6 +385,53 @@ fn collect_org_files(dir: &Path, verbose: bool) -> Result<Vec<PathBuf>> {
     out.sort();
     out.dedup();
     Ok(out)
+}
+
+fn resolve_write_directory(inputs: &[PathBuf]) -> Result<PathBuf> {
+    if inputs.is_empty() {
+        anyhow::bail!("no inputs provided to resolve write directory");
+    }
+
+    let mut dirs = Vec::new();
+    for original in inputs {
+        let canonical =
+            fs::canonicalize(original).with_context(|| format!("resolving path {:?}", original))?;
+        let metadata = fs::metadata(&canonical)
+            .with_context(|| format!("reading metadata for {:?}", canonical))?;
+        if metadata.is_dir() {
+            dirs.push(canonical);
+        } else if metadata.is_file() {
+            if let Some(parent) = canonical.parent() {
+                dirs.push(parent.to_path_buf());
+            } else {
+                anyhow::bail!("file {:?} has no parent directory", canonical);
+            }
+        } else {
+            anyhow::bail!("{:?} is neither a file nor a directory", canonical);
+        }
+    }
+
+    dirs.sort();
+    dirs.dedup();
+    if dirs.is_empty() {
+        anyhow::bail!("failed to resolve candidate directories from inputs");
+    }
+
+    lowest_common_directory(&dirs).context("computing lowest common directory for journal inputs")
+}
+
+fn lowest_common_directory(paths: &[PathBuf]) -> Option<PathBuf> {
+    let mut iter = paths.iter();
+    let first = iter.next()?;
+    let mut prefix = first.clone();
+    for path in iter {
+        while !path.starts_with(&prefix) {
+            if !prefix.pop() {
+                return None;
+            }
+        }
+    }
+    Some(prefix)
 }
 
 fn handle_format(args: FormatArgs, verbose: bool) -> Result<()> {
@@ -444,4 +548,60 @@ fn visit_dir(
         }
     }
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use std::fs;
+    use std::path::PathBuf;
+
+    #[test]
+    fn resolve_write_directory_prefers_provided_directory() {
+        let tmp = tempfile::tempdir().expect("tempdir");
+        let journal = tmp.path().join("journal");
+        fs::create_dir_all(&journal).expect("mkdir journal");
+
+        let resolved = resolve_write_directory(&[journal.clone()]).expect("resolve directory");
+
+        assert_eq!(
+            resolved,
+            fs::canonicalize(&journal).expect("canonical fixed")
+        );
+    }
+
+    #[test]
+    fn resolve_write_directory_uses_lowest_common_parent_for_files() {
+        let tmp = tempfile::tempdir().expect("tempdir");
+        let root = tmp.path();
+        let dir_a = root.join("a");
+        let dir_b = root.join("b");
+        fs::create_dir_all(&dir_a).expect("mkdir a");
+        fs::create_dir_all(&dir_b).expect("mkdir b");
+
+        let file_a = dir_a.join("alpha.org");
+        let file_b = dir_b.join("beta.org");
+        fs::write(&file_a, "* Alpha").expect("write alpha");
+        fs::write(&file_b, "* Beta").expect("write beta");
+
+        let resolved =
+            resolve_write_directory(&[file_a.clone(), file_b.clone()]).expect("resolve files");
+
+        assert_eq!(resolved, fs::canonicalize(root).expect("canonical root"));
+    }
+
+    #[test]
+    fn lowest_common_directory_handles_nested_paths() {
+        let paths: Vec<PathBuf> = [
+            "work/journal/2025",
+            "work/journal/2024",
+            "work/journal/2025/wip",
+        ]
+        .into_iter()
+        .map(PathBuf::from)
+        .collect();
+
+        let lcd = lowest_common_directory(&paths).expect("lcd");
+        assert_eq!(lcd, PathBuf::from("work/journal"));
+    }
 }

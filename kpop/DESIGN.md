@@ -29,3 +29,21 @@ This entry seeds the design diary; future adjustments will append rather than re
 - **CLI upgrades**: Added an explicit `format` subcommand and taught `journal new` to emit canonical `.org` via the formatter (or JSON when requested). Fresh journal files now arrive ready for on-disk writes without extra tooling.
 - **Testing**: Extended formatter coverage with stability assertions and ensured the journal projector produces formatter-stable output, keeping regressions visible.
 - **Agenda quality-of-life**: CLI accepts directories for every command, and agenda mode now supports `--include-todos` to surface undated tasks alongside scheduled items, matching Org agenda expectations while retaining deterministic ordering.
+
+# 2025-02-15 — Journal TODO merge fix
+
+- **Bug**: Carrying TODOs forward produced duplicate heading stacks (`** pay VM` > `*** TODO pay VM`). We were normalising the grouping path with the dangling TODO headline included, so `ensure_path` synthesised an intermediate heading.
+- **Fix**: To stay inside *Simplicity* and preserve the existing merge projector (*Reuse*), we now bucket TODOs using their parent path, leaving the TODO node itself to be merged by `merge_todos`. The traversal still pushes the headline for child context, satisfying *Purity* by keeping the projector deterministic.
+- **Tests**: Added a regression case in `org/src/lib.rs` ensuring the carried-over children under "* Plan for today" remain TODO nodes directly—anchoring the bugfix in the suite (*Tests are everything*).
+
+# 2025-02-15 — Journal CLI write automation
+
+- **Feature**: Extended `journal-new` to accept file/directory inputs directly and resolve the lowest common journal directory so `--write` can auto-drop a `{YYYY-MM-DD}.org` entry exactly where the source material lives, keeping with *Simplicity*.
+- **Implementation**: Reused the shared `expand_inputs` walker and layered a pure `resolve_write_directory` helper to compute targets without touching IO besides canonicalisation (*Reuse*, *Purity*).
+- **CLI ergonomics**: Added a conflict guard between `--write` and `--output`, defaulted `--date` to today, and left existing JSON/Org emit paths intact so downstream scripts keep working.
+- **Tests**: Backstopped the directory resolution logic with tempdir-backed unit tests to lock in the lowest-common-ancestor behaviour (*Tests are everything*).
+
+# 2025-02-15 — Journal CLI idempotence
+
+- **Behaviour**: When `--write` encounters an existing `{date}.org`, we now reuse the on-disk entry as the template and overwrite in place, keeping the projector pure while making repeat runs a no-op (*Purity*, *Simplicity*).
+- **Projector guardrail**: Added a regression test proving that feeding the newly generated entry back into `build_from_files` yields identical output, cementing the idempotent contract (*Tests are everything*).
