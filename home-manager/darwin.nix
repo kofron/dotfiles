@@ -51,14 +51,12 @@
     ".config/fish/functions/e.fish".source = ../config/fish/functions/e.fish;
     ".config/fish/functions/hm-s.fish".source =
       ../config/fish/functions/hm-s.fish;
+      ".config/fish/functions/hm-d-s.fish".source =
+        ../config/fish/functions/hm-d-s.fish;
     ".config/fish/functions/op-env.fish".source =
       ../config/fish/functions/op-env.fish;
     ".config/fish/functions/nd.fish".source = ../config/fish/functions/nd.fish;
     ".config/op/env.fish.tmpl".source = ../config/op/env.fish.tmpl;
-    ".config/custom_scripts" = {
-      source = ../custom_scripts;
-      recursive = true;
-    };
   };
 
   # Home Manager can also manage your environment variables through
@@ -89,12 +87,6 @@
     extraPackages = epkgs: [ epkgs.vterm ];
   };
 
-  programs.ghostty.enable = true;
-  programs.ghostty.settings = {
-    "font-family" = "IosevkaTerm Nerd Font";
-    "font-size" = 12;
-  };
-
   programs.fish = {
     enable = true;
     plugins = [{
@@ -103,6 +95,11 @@
     }];
     interactiveShellInit = ''
       set -g fish_greeting
+      # Source - https://stackoverflow.com/a
+      # Posted by Maximilian, modified by community. See post 'Timeline' for change history
+      # Retrieved 2025-12-09, License - CC BY-SA 4.0
+      contains /path $fish_user_paths; or set -Ua fish_user_paths Users/kofron/.nix-profile/bin /etc/profiles/per-user/kofron/bin /run/current-system/sw/bin /nix/var/nix/profiles/default/bin
+
     '';
   };
 }

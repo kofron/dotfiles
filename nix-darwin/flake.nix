@@ -17,7 +17,6 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager }:
   let
     configuration = {pkgs, ... }: {
-
         nix.enable = false;
         # Necessary for using flakes on this system.
         nix.settings.experimental-features = "nix-command flakes";
@@ -27,6 +26,8 @@
         # Used for backwards compatibility. please read the changelog
         # before changing: `darwin-rebuild changelog`.
         system.stateVersion = 4;
+
+        system.primaryUser = "kofron";
 
         # The platform the configuration will be used on.
         # If you're on an Intel system, replace with "x86_64-darwin"
@@ -44,6 +45,15 @@
         environment.systemPackages = [
 
         ];
+
+        homebrew = {
+            enable = true;
+            # onActivation.cleanup = "uninstall";
+
+            taps = [];
+            brews = [ ];
+            casks = [ "ghostty"];
+        };
     };
     homeconfig = {pkgs, ...}: {
       # this is internal compatibility configuration
@@ -58,6 +68,7 @@
           EDITOR = "emacs";
       };
 
+
       imports = [../home-manager/darwin.nix];
   };
   in
@@ -66,6 +77,7 @@
       modules = [
          configuration
          home-manager.darwinModules.home-manager  {
+            home-manager.backupFileExtension = "pre-hm";
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.verbose = true;
