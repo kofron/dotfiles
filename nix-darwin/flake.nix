@@ -48,7 +48,7 @@
     homeconfig = {pkgs, ...}: {
       # this is internal compatibility configuration
       # for home-manager, don't change this!
-      home.stateVersion = "25.11";
+      home.stateVersion = "25.05";
       # Let home-manager install and manage itself.
       programs.home-manager.enable = true;
 
@@ -58,7 +58,7 @@
           EDITOR = "emacs";
       };
 
-      home.configuration = ../home-manager/home.nix
+      imports = [../home-manager/darwin.nix];
   };
   in
   {
