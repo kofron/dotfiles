@@ -50,8 +50,8 @@
             enable = true;
             # onActivation.cleanup = "uninstall";
 
-            taps = [];
-            brews = [ ];
+            taps = ["ejoffe/homebrew-tap"];
+            brews = ["ejoffe/tap/spr" "gh"];
             casks = [ "ghostty"];
         };
     };

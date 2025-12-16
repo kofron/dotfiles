@@ -27,7 +27,16 @@
   # environment.
   # most packages from stable
   home.packages = with pkgs;
-    [];
+    [
+      nerd-fonts.iosevka-term
+      nerd-fonts.iosevka
+      iosevka
+      zellij
+      age
+      bun
+      pnpm
+      nodejs_22
+    ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
